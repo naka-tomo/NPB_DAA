@@ -6,6 +6,8 @@ The NPB-DAA can directly acquire language and acoustic models from observed cont
 This generative model is called hiererichel Dirichlet process hidden language model (HDP-HLM), which is obtained by extending the hierarchical Dirichlet process hidden semi-Markov model (HDP-HSMM) proposed by Johnson et al.
 An inference procedure for the HDP-HLM is derived using the blocked Gibbs sampler originally proposed for the HDP-HSMM.
 
+[Colab nobotebook](https://colab.research.google.com/drive/1CUiJLtArgW9-Y4uh0JuE4PQfc4COd7mG?usp=sharing)
+
 # Requirement
 
 + Ubuntu 16.04 LTS
