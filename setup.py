@@ -65,7 +65,7 @@ if not os.path.exists('deps'):
     os.mkdir('deps')
 
 # download Eigen if we don't have it in deps
-eigenurl = 'http://bitbucket.org/eigen/eigen/get/3.2.6.tar.gz'
+eigenurl = 'https://gitlab.com/libeigen/eigen/-/archive/3.2.10/eigen-3.2.10.tar.gz'
 eigentarpath = os.path.join('deps', 'Eigen.tar.gz')
 eigenpath = os.path.join('deps', 'Eigen')
 if not os.path.exists(eigenpath):
@@ -73,7 +73,7 @@ if not os.path.exists(eigenpath):
     urlretrieve(eigenurl, eigentarpath)
     with tarfile.open(eigentarpath, 'r') as tar:
         tar.extractall('deps')
-    thedir = glob(os.path.join('deps', 'eigen-eigen-*'))[0]
+    thedir = glob(os.path.join('deps', 'eigen-*'))[0]
     shutil.move(os.path.join(thedir, 'Eigen'), eigenpath)
     print('...done!')
 
