@@ -8,6 +8,8 @@ from sklearn.metrics import adjusted_rand_score, f1_score
 from argparse import ArgumentParser
 from util.config_parser import ConfigParser_with_eval
 import warnings
+from pathlib import Path
+
 warnings.filterwarnings('ignore')
 
 #%% parse arguments
